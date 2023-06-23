@@ -1,0 +1,188 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --gris-principal: #353535;
+    --teal: #ffffff;
+    --tealMid: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-hestia-child {
+    padding: 1rem;
+    background-color: var(--gris-principal);
+}
+
+.nav-hestia-child ul {
+    padding: 0;
+    margin-bottom: 0;
+    list-style: none;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-logo {
+    padding-left: 14rem;
+    padding-top: 2rem;
+    width: 60%;
+    padding-bottom: 2rem;
+}
+
+.menu-item {
+    font-size: 20px;
+}
+
+.hestia-big-title-content {
+    margin-left: 0 !important;
+}
+
+.wp-container-4 {
+    margin-left: 3rem !important;
+}
+
+/* FOOTER */
+
+.browser {
+    position: relative;
+    width: 100%;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    background: var(--gris-principal);
+}
+
+.social-media-links {
+    overflow: hidden;
+    padding-bottom: 2rem;
+    padding-left: 4rem !important;
+}
+
+.li-footer {
+    display: inline;
+    margin: 1rem;
+}
+
+.a-footer {
+    display: inline-block;
+    height: 30px;
+    padding: 20px;
+    position: relative;
+    transition: .2s ease-in;
+}
+
+.svg-footer {
+    position: absolute;
+    top: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+path,
+circle {
+    fill: var(--teal);
+    transition: .2s ease-in;
+}
+
+.a-footer:hover {
+    transform: translateY(-4px);
+}
+.text-footer {
+    color: var(--white);
+    text-align: center;
+    font-size: 16px;
+    margin-top: 2rem;
+    margin-left: -4rem;
+}
+
+.single-post-container {
+    margin-left: 0rem;
+}
+
+.related-posts {
+    margin-left: 0;
+    margin-bottom: 20rem;
+}
+
+.wpforms-submit {
+    background-color: var(--gris-principal) !important;
+    padding: 1rem !important;
+    text-align: center !important;
+}
+
+.wpforms-field-large, .wpforms-field-medium {
+    background-color: rgb(218, 218, 218) !important;
+}
+
+@media screen and (min-width:600px) {
+    .nav-hestia-child {
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 23rem;
+        background-color: var(--gris-principal);
+        z-index: 4;
+        box-shadow: 0 0 10px var(--black);
+        padding: 4rem 1rem;
+    }
+
+    .main,
+    .big-title-slider-content {
+        margin-left: 23rem;
+    }
+
+    .nav-hestia-child ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Se busca en elemento que contenga todo el menu y se centra en la pagina */
+    .menu-primary-menu-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 850px;
+    }
+
+    .img-logo {
+        padding-left: 5rem;
+        padding-top: 2rem;
+        width: 70%;
+        margin-bottom: -15rem;
+    }
+
+    .menu-item {
+        font-size: 25px;
+    }
+
+    .hestia-big-title-content {
+        margin-left: 11rem !important;
+    }
+
+    .social-media-links {
+        padding-left: 17rem !important;
+        text-align: center;
+    }
+
+    .text-footer {
+        text-align: center;
+        margin-left: 7rem;
+    }
+
+    .related-posts {
+        margin-left: 20rem;
+        margin-bottom: 15rem;
+    }
+}
+
+
